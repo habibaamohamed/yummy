@@ -1,0 +1,618 @@
+<html>
+    <head>
+        <title>Yummy</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+        <body class="bg-black" style="overflow: auto;">
+            <!-- loader section -->
+            <div id="loading" style="display: none;">
+              <span class="loader" style="display: none;"></span>
+            </div>
+            <!-- end -->
+            <!-- Display Api -->
+              <div class="container py-5 ">
+              <div class="row gy-5" id="myData"><div class="col-md-3 classes " onclick="getId('52977')">
+                        <img src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg" class="w-100 imagess rounded" alt="Corba">
+                <div class="overlay">
+                  <div class="text">Corba</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('53065')">
+                        <img src="https://www.themealdb.com/images/media/meals/g046bb1663960946.jpg" class="w-100 imagess rounded" alt="Sushi">
+                <div class="overlay">
+                  <div class="text">Sushi</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('53060')">
+                        <img src="https://www.themealdb.com/images/media/meals/tkxquw1628771028.jpg" class="w-100 imagess rounded" alt="Burek">
+                <div class="overlay">
+                  <div class="text">Burek</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('53069')">
+                        <img src="https://www.themealdb.com/images/media/meals/4pqimk1683207418.jpg" class="w-100 imagess rounded" alt="Bistek">
+                <div class="overlay">
+                  <div class="text">Bistek</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('53026')">
+                        <img src="https://www.themealdb.com/images/media/meals/n3xxd91598732796.jpg" class="w-100 imagess rounded" alt="Tamiya">
+                <div class="overlay">
+                  <div class="text">Tamiya</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52978')">
+                        <img src="https://www.themealdb.com/images/media/meals/mlchx21564916997.jpg" class="w-100 imagess rounded" alt="Kumpir">
+                <div class="overlay">
+                  <div class="text">Kumpir</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52948')">
+                        <img src="https://www.themealdb.com/images/media/meals/1525876468.jpg" class="w-100 imagess rounded" alt="Wontons">
+                <div class="overlay">
+                  <div class="text">Wontons</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52844')">
+                        <img src="https://www.themealdb.com/images/media/meals/wtsvxx1511296896.jpg" class="w-100 imagess rounded" alt="Lasagne">
+                <div class="overlay">
+                  <div class="text">Lasagne</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52971')">
+                        <img src="https://www.themealdb.com/images/media/meals/1bsv1q1560459826.jpg" class="w-100 imagess rounded" alt="Kafteji">
+                <div class="overlay">
+                  <div class="text">Kafteji</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('53013')">
+                        <img src="https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg" class="w-100 imagess rounded" alt="Big Mac">
+                <div class="overlay">
+                  <div class="text">Big Mac</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52804')">
+                        <img src="https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg" class="w-100 imagess rounded" alt="Poutine">
+                <div class="overlay">
+                  <div class="text">Poutine</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('53027')">
+                        <img src="https://www.themealdb.com/images/media/meals/4er7mj1598733193.jpg" class="w-100 imagess rounded" alt="Koshari">
+                <div class="overlay">
+                  <div class="text">Koshari</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52785')">
+                        <img src="https://www.themealdb.com/images/media/meals/wuxrtu1483564410.jpg" class="w-100 imagess rounded" alt="Dal fry">
+                <div class="overlay">
+                  <div class="text">Dal fry</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52929')">
+                        <img src="https://www.themealdb.com/images/media/meals/txsupu1511815755.jpg" class="w-100 imagess rounded" alt="Timbits">
+                <div class="overlay">
+                  <div class="text">Timbits</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52854')">
+                        <img src="https://www.themealdb.com/images/media/meals/rwuyqx1511383174.jpg" class="w-100 imagess rounded" alt="Pancakes">
+                <div class="overlay">
+                  <div class="text">Pancakes</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52769')">
+                        <img src="https://www.themealdb.com/images/media/meals/sxysrt1468240488.jpg" class="w-100 imagess rounded" alt="Kapsalon">
+                <div class="overlay">
+                  <div class="text">Kapsalon</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52802')">
+                        <img src="https://www.themealdb.com/images/media/meals/ysxwuq1487323065.jpg" class="w-100 imagess rounded" alt="Fish pie">
+                <div class="overlay">
+                  <div class="text">Fish pie</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52906')">
+                        <img src="https://www.themealdb.com/images/media/meals/wssvvs1511785879.jpg" class="w-100 imagess rounded" alt="Flamiche">
+                <div class="overlay">
+                  <div class="text">Flamiche</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('53028')">
+                        <img src="https://www.themealdb.com/images/media/meals/kcv6hj1598733479.jpg" class="w-100 imagess rounded" alt="Shawarma">
+                <div class="overlay">
+                  <div class="text">Shawarma</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52887')">
+                        <img src="https://www.themealdb.com/images/media/meals/utxqpt1511639216.jpg" class="w-100 imagess rounded" alt="Kedgeree">
+                <div class="overlay">
+                  <div class="text">Kedgeree</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52980')">
+                        <img src="https://www.themealdb.com/images/media/meals/hyarod1565090529.jpg" class="w-100 imagess rounded" alt="Stamppot">
+                <div class="overlay">
+                  <div class="text">Stamppot</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('53006')">
+                        <img src="https://www.themealdb.com/images/media/meals/ctg8jd1585563097.jpg" class="w-100 imagess rounded" alt="Moussaka">
+                <div class="overlay">
+                  <div class="text">Moussaka</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52963')">
+                        <img src="https://www.themealdb.com/images/media/meals/g373701551450225.jpg" class="w-100 imagess rounded" alt="Shakshuka">
+                <div class="overlay">
+                  <div class="text">Shakshuka</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52931')">
+                        <img src="https://www.themealdb.com/images/media/meals/yrstur1511816601.jpg" class="w-100 imagess rounded" alt="Sugar Pie">
+                <div class="overlay">
+                  <div class="text">Sugar Pie</div>
+                    </div>
+                    </div><div class="col-md-3 classes " onclick="getId('52811')">
+                        <img src="https://www.themealdb.com/images/media/meals/xrrwpx1487347049.jpg" class="w-100 imagess rounded" alt="Ribollita">
+                <div class="overlay">
+                  <div class="text">Ribollita</div>
+                    </div>
+                    </div></div>
+              <div id="mealData"></div> <!-- Additional div for meal data display -->
+            </div>
+              
+            <!-- End -->
+            <!-- sidebar menu -->
+            <div id="setting" class="">
+              <div class="gear-box d-none">
+                <div class=" page-hero ">
+                <ul class="slide-menu p-5" id="menu" style="cursor: pointer;">
+                  <li class="text1">Search</li>
+                   <li class="pt-4 text2">Categories</li>
+                  <li class="pt-4 text3">Area</li>
+                  <li class="pt-4 text4">Ingredients</li>
+                  <li class="pt-4 text6">Contact Us</li> 
+                </ul>
+                  <div class="socials">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                  </div>
+                </div>
+                
+              </div>
+              
+              <div class="icon-container d-flex flex-column align-items-center justify-content-between p-1">
+              <img src="logo.png" alt="happy face" style="width: 40px;" height="40px">
+             <div class="pos position-relative">
+              <i class="fa-solid fa-bars fa-3x" id="class-i"></i> 
+             </div>
+              <div class="pos2 position-absolute">
+              <i class="fa-solid fa-xmark fa-3x d-none" id="class-x"></i>
+              </div>
+              <div class="icon-container2 d-flex flex-column align-items-center justify-content-evenly">
+              <i class="fa-solid fa-globe"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+              </div>
+              </div>
+            
+            <!-- end -->
+             
+            <!-- search section -->
+            <div class="container py-5 d-none" id="search">
+            <div class="position d-flex ">
+              <input type="text" class="form-control m-4 bg-black input1" placeholder="Search By Name" id="input1">
+              <input type="text" class="form-control m-4 bg-black " placeholder="Serach By Letter" id="input2">
+            </div>
+            <div class="row gy-5" id="myDatas">
+            </div>
+            </div>
+            <!-- end -->
+            
+            <!-- categories section -->
+            <section id="categories" class="d-none">
+              <div class="container">
+                <div class="row gy-5" id="myData3"><div class="col-md-3" id="carta " onclick="getMealCat('Beef')">
+                    <img src="https://www.themealdb.com/images/category/beef.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Beef</h2> </div>
+            <br>
+            <p>Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times.[1] Beef is a source of high-quality protein and essential nutrients.[2]</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Chicken')">
+                    <img src="https://www.themealdb.com/images/category/chicken.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Chicken</h2> </div>
+            <br>
+            <p>Chicken is a type of domesticated fowl, a subspecies of the red junglefowl. It is one of the most common and widespread domestic animals, with a total population of more than 19 billion as of 2011.[1] Humans commonly keep chickens as a source of food (consuming both their meat and eggs) and, more rarely, as pets.</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Dessert')">
+                    <img src="https://www.themealdb.com/images/category/dessert.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Dessert</h2> </div>
+            <br>
+            <p>Dessert is a course that concludes a meal. The course usually consists of sweet foods, such as confections dishes or fruit, and possibly a beverage such as dessert wine or liqueur, however in the United States it may include coffee, cheeses, nuts, or other savory items regarded as a separate course elsewhere. In some parts of the world, such as much of central and western Africa, and most parts of China, there is no tradition of a dessert course to conclude a meal.
+            
+            The term dessert can apply to many confections, such as biscuits, cakes, cookies, custards, gelatins, ice creams, pastries, pies, puddings, and sweet soups, and tarts. Fruit is also commonly found in dessert courses because of its naturally occurring sweetness. Some cultures sweeten foods that are more commonly savory to create desserts.</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Lamb')">
+                    <img src="https://www.themealdb.com/images/category/lamb.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Lamb</h2> </div>
+            <br>
+            <p>Lamb, hogget, and mutton are the meat of domestic sheep (species Ovis aries) at different ages.
+            
+            A sheep in its first year is called a lamb, and its meat is also called lamb. The meat of a juvenile sheep older than one year is hogget; outside the USA this is also a term for the living animal. The meat of an adult sheep is mutton, a term only used for the meat, not the living animals. The term mutton is almost always used to refer to goat meat in the Indian subcontinent.
+            
+            </p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Miscellaneous')">
+                    <img src="https://www.themealdb.com/images/category/miscellaneous.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Miscellaneous</h2> </div>
+            <br>
+            <p>General foods that don't fit into another category</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Pasta')">
+                    <img src="https://www.themealdb.com/images/category/pasta.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Pasta</h2> </div>
+            <br>
+            <p>Pasta is a staple food of traditional Italian cuisine, with the first reference dating to 1154 in Sicily.
+            
+            Also commonly used to refer to the variety of pasta dishes, pasta is typically a noodle made from an unleavened dough of a durum wheat flour mixed with water or eggs and formed into sheets or various shapes, then cooked by boiling or baking. As an alternative for those wanting a different taste, or who need to avoid products containing gluten, some pastas can be made using rice flour in place of wheat.[3][4] Pastas may be divided into two broad categories, dried (pasta secca) and fresh (pasta fresca).</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Pork')">
+                    <img src="https://www.themealdb.com/images/category/pork.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Pork</h2> </div>
+            <br>
+            <p>Pork is the culinary name for meat from a domestic pig (Sus scrofa domesticus). It is the most commonly consumed meat worldwide,[1] with evidence of pig husbandry dating back to 5000 BC. Pork is eaten both freshly cooked and preserved. Curing extends the shelf life of the pork products. Ham, smoked pork, gammon, bacon and sausage are examples of preserved pork. Charcuterie is the branch of cooking devoted to prepared meat products, many from pork.
+            
+            Pork is the most popular meat in Eastern and Southeastern Asia, and is also very common in the Western world, especially in Central Europe. It is highly prized in Asian cuisines for its fat content and pleasant texture. Consumption of pork is forbidden by Jewish and Muslim dietary law, a taboo that is deeply rooted in tradition, with several suggested possible causes. The sale of pork is limited in Israel and illegal in certain Muslim countries.</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Seafood')">
+                    <img src="https://www.themealdb.com/images/category/seafood.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Seafood</h2> </div>
+            <br>
+            <p>Seafood is any form of sea life regarded as food by humans. Seafood prominently includes fish and shellfish. Shellfish include various species of molluscs, crustaceans, and echinoderms. Historically, sea mammals such as whales and dolphins have been consumed as food, though that happens to a lesser extent in modern times. Edible sea plants, such as some seaweeds and microalgae, are widely eaten as seafood around the world, especially in Asia (see the category of sea vegetables). In North America, although not generally in the United Kingdom, the term "seafood" is extended to fresh water organisms eaten by humans, so all edible aquatic life may be referred to as seafood. For the sake of completeness, this article includes all edible aquatic life.</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Side')">
+                    <img src="https://www.themealdb.com/images/category/side.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Side</h2> </div>
+            <br>
+            <p>A side dish, sometimes referred to as a side order, side item, or simply a side, is a food item that accompanies the entrée or main course at a meal. Side dishes such as salad, potatoes and bread are commonly used with main courses throughout many countries of the western world. New side orders introduced within the past decade[citation needed], such as rice and couscous, have grown to be quite popular throughout Europe, especially at formal occasions (with couscous appearing more commonly at dinner parties with Middle Eastern dishes).</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Starter')">
+                    <img src="https://www.themealdb.com/images/category/starter.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Starter</h2> </div>
+            <br>
+            <p>An entrée in modern French table service and that of much of the English-speaking world (apart from the United States and parts of Canada) is a dish served before the main course of a meal; it may be the first dish served, or it may follow a soup or other small dish or dishes. In the United States and parts of Canada, an entrée is the main dish or the only dish of a meal.
+            
+            Historically, the entrée was one of the stages of the “Classical Order” of formal French table service of the 18th and 19th centuries. It formed a part of the “first service” of the meal, which consisted of potage, hors d’œuvre, and entrée (including the bouilli and relevé). The “second service” consisted of roast (rôti), salad, and entremets (the entremets sometimes being separated into a “third service” of their own). The final service consisted only of dessert.[3]:3–11 :13–25</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Vegan')">
+                    <img src="https://www.themealdb.com/images/category/vegan.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Vegan</h2> </div>
+            <br>
+            <p>Veganism is both the practice of abstaining from the use of animal products, particularly in diet, and an associated philosophy that rejects the commodity status of animals.[b] A follower of either the diet or the philosophy is known as a vegan (pronounced /ˈviːɡən/ VEE-gən). Distinctions are sometimes made between several categories of veganism. Dietary vegans (or strict vegetarians) refrain from consuming animal products, not only meat but also eggs, dairy products and other animal-derived substances.[c] The term ethical vegan is often applied to those who not only follow a vegan diet but extend the philosophy into other areas of their lives, and oppose the use of animals for any purpose.[d] Another term is environmental veganism, which refers to the avoidance of animal products on the premise that the harvesting or industrial farming of animals is environmentally damaging and unsustainable.</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Vegetarian')">
+                    <img src="https://www.themealdb.com/images/category/vegetarian.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Vegetarian</h2> </div>
+            <br>
+            <p>Vegetarianism is the practice of abstaining from the consumption of meat (red meat, poultry, seafood, and the flesh of any other animal), and may also include abstention from by-products of animal slaughter.
+            
+            Vegetarianism may be adopted for various reasons. Many people object to eating meat out of respect for sentient life. Such ethical motivations have been codified under various religious beliefs, as well as animal rights advocacy. Other motivations for vegetarianism are health-related, political, environmental, cultural, aesthetic, economic, or personal preference. There are variations of the diet as well: an ovo-lacto vegetarian diet includes both eggs and dairy products, an ovo-vegetarian diet includes eggs but not dairy products, and a lacto-vegetarian diet includes dairy products but not eggs. A vegan diet excludes all animal products, including eggs and dairy. Some vegans also avoid other animal products such as beeswax, leather or silk clothing, and goose-fat shoe polish.</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Breakfast')">
+                    <img src="https://www.themealdb.com/images/category/breakfast.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Breakfast</h2> </div>
+            <br>
+            <p>Breakfast is the first meal of a day. The word in English refers to breaking the fasting period of the previous night. There is a strong likelihood for one or more "typical", or "traditional", breakfast menus to exist in most places, but their composition varies widely from place to place, and has varied over time, so that globally a very wide range of preparations and ingredients are now associated with breakfast.</p>
+                </div>
+                </div><div class="col-md-3" id="carta " onclick="getMealCat('Goat')">
+                    <img src="https://www.themealdb.com/images/category/goat.png" class="w-100 imagess rounded">
+            <div class="overlay">
+            <div class="text5"><h2>Goat</h2> </div>
+            <br>
+            <p>The domestic goat or simply goat (Capra aegagrus hircus) is a subspecies of C. aegagrus domesticated from the wild goat of Southwest Asia and Eastern Europe. The goat is a member of the animal family Bovidae and the subfamily Caprinae, meaning it is closely related to the sheep. There are over 300 distinct breeds of goat. Goats are one of the oldest domesticated species of animal, and have been used for milk, meat, fur and skins across much of the world. Milk from goats is often turned into goat cheese.</p>
+                </div>
+                </div></div>
+              </div>
+            </section>
+            <!-- end -->
+            <!-- Area -->
+            <section class="Area d-none" id="area">
+              <div class="container text-white">
+                <div class="row " id="areas"><div class="col-md-3" onclick="getMealArea('American')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>American</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('British')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>British</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Canadian')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Canadian</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Chinese')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Chinese</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Croatian')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Croatian</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Dutch')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Dutch</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Egyptian')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Egyptian</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Filipino')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Filipino</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('French')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>French</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Greek')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Greek</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Indian')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Indian</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Irish')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Irish</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Italian')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Italian</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Jamaican')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Jamaican</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Japanese')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Japanese</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Kenyan')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Kenyan</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Malaysian')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Malaysian</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Mexican')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Mexican</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Moroccan')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Moroccan</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Polish')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Polish</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Portuguese')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Portuguese</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Russian')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Russian</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Spanish')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Spanish</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Thai')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Thai</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Tunisian')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Tunisian</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Turkish')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Turkish</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Unknown')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Unknown</h2>
+                            </div><div class="col-md-3" onclick="getMealArea('Vietnamese')">
+                    <i class="fa-solid fa-house-laptop fa-3x text-center ms-3"></i>
+                                <h2>Vietnamese</h2>
+                            </div></div>
+              </div>
+            </section>
+                    <!-- end -->
+                  <!-- ingrediants -->
+            <section class=" d-none" id="ing">
+              <div class="container text-white">
+                <div class="row" id="ingg"><div class="col-md-3" onclick="getMealIngr('Chicken')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Chicken</h2>
+                                    <p class="text-white">The chicken is a type of domesticated fowl, a subspecies of the red junglefowl (Gallus gallus). It is one of the most common and widespread domestic animals, with a total population of more than 19 billion as of 2011. There are more chickens in the world than any other bird or domesticated fowl. Humans keep chickens primarily as a source of food (consuming both their meat and eggs) and, less commonly, as pets. Originally raised for cockfighting or for special ceremonies, chickens were not kept for food until the Hellenistic period (4th–2nd centuries BC).
+            
+            Genetic studies have pointed to multiple maternal origins in South Asia, Southeast Asia, and East Asia, but with the clade found in the Americas, Europe, the Middle East and Africa originating in the Indian subcontinent. From ancient India, the domesticated chicken spread to Lydia in western Asia Minor, and to Greece by the 5th century BC. Fowl had been known in Egypt since the mid-15th century BC, with the "bird that gives birth every day" having come to Egypt from the land between Syria and Shinar, Babylonia, according to the annals of Thutmose III.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Salmon')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Salmon</h2>
+                                    <p class="text-white">Salmon is the common name for several species of ray-finned fish in the family Salmonidae. Other fish in the same family include trout, char, grayling and whitefish. Salmon are native to tributaries of the North Atlantic (genus Salmo) and Pacific Ocean (genus Oncorhynchus). Many species of salmon have been introduced into non-native environments such as the Great Lakes of North America and Patagonia in South America. Salmon are intensively farmed in many parts of the world.
+            
+            Typically, salmon are anadromous: they hatch in fresh water, migrate to the ocean, then return to fresh water to reproduce. However, populations of several species are restricted to fresh water through their lives. Folklore has it that the fish return to the exact spot where they hatched to spawn. Tracking studies have shown this to be mostly true. A portion of a returning salmon run may stray and spawn in different freshwater systems; the percent of straying depends on the species of salmon. Homing behavior has been shown to depend on olfactory memory. Salmon date back to the Neogene.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Beef')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Beef</h2>
+                                    <p class="text-white">Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of high-quality protein and nutrients.
+            
+            Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed (corned beef or beef jerky). Trimmings, on the other hand, are usually mixed with meat from older, leaner (therefore tougher) cattle, are ground, minced or used in sausages. The blood is used in some varieties called blood sausage. Other parts that are eaten include other muscles and offal, such as the oxtail, liver, tongue, tripe from the reticulum or rumen, glands (particularly the pancreas and thymus, referred to as sweetbread), the heart, the brain (although forbidden where there is a danger of bovine spongiform encephalopathy, BSE, commonly referred to as mad cow disease), the kidneys, and the tender testicles of the bull (known in the United States as calf fries, prairie oysters, or Rocky Mountain oysters). Some intestines are cooked and eaten as is, but are more often cleaned and used as natural sausage casings. The bones are used for making beef stock.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Pork')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Pork</h2>
+                                    <p class="text-white">Pork is the culinary name for the flesh of a domestic pig (Sus scrofa domesticus). It is the most commonly consumed meat worldwide,[1] with evidence of pig husbandry dating back to 5000 BC.
+            
+            Pork is eaten both freshly cooked and preserved. Curing extends the shelf life of the pork products. Ham, smoked pork, gammon, bacon and sausage are examples of preserved pork. Charcuterie is the branch of cooking devoted to prepared meat products, many from pork.
+            
+            Pig is the most popular meat in the Eastern and non-Muslim parts of Southeastern Asia (Indochina, Philippines, Singapore, East Timor) and is also very common in the Western world, especially in Central Europe. It is highly prized in Asian cuisines for its fat content and pleasant texture. Consumption of pork is forbidden by Jewish, Muslim and Rastafarian dietary law, for religious reasons, with several suggested possible causes.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Avocado')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Avocado</h2>
+                                    <p class="text-white">The avocado, a tree with probable origin in South Central Mexico, is classified as a member of the flowering plant family Lauraceae. The fruit of the plant, also called an avocado (or avocado pear or alligator pear), is botanically a large berry containing a single large seed.
+            
+            Avocados are commercially valuable and are cultivated in tropical and Mediterranean climates throughout the world. They have a green-skinned, fleshy body that may be pear-shaped, egg-shaped, or spherical. Commercially, they ripen after harvesting. Avocado trees are partially self-pollinating, and are often propagated through grafting to maintain predictable fruit quality and quantity. In 2017, Mexico produced 34% of the world supply of avocados.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Apple Cider Vinegar')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Apple Cider Vinegar</h2>
+                                    <p class="text-white">Apple cider vinegar, or cider vinegar, is a vinegar made from fermented apple juice, and used in salad dressings, marinades, vinaigrettes, food preservatives, and chutneys. It is made by crushing apples, then squeezing out the juice. Bacteria and yeast are added to the liquid to start the alcoholic fermentation process, which converts the sugars to alcohol. In a second fermentation step, the alcohol is converted into vinegar by acetic acid-forming bacteria (Acetobacter species). Acetic acid and malic acid combine to give vinegar its sour taste. Apple cider vinegar has no medicinal or nutritional value. There is no high-quality clinical evidence that regular consumption of apple cider vinegar helps to maintain or lose body weight, or is effective to manage blood glucose and lipid levels.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Asparagus')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Asparagus</h2>
+                                    <p class="text-white">Asparagus, or garden asparagus, folk name sparrow grass, scientific name Asparagus officinalis, is a perennial flowering plant species in the genus Asparagus. Its young shoots are used as a spring vegetable.
+            
+            It was once classified in the lily family, like the related Allium species, onions and garlic. However, genetic research places lilies, Allium, and asparagus in three separate families—the Liliaceae, Amaryllidaceae, and Asparagaceae, respectively—with the Amaryllidaceae and Asparagaceae being grouped together in the order Asparagales. Sources differ as to the native range of Asparagus officinalis, but generally include most of Europe and western temperate Asia. It is widely cultivated as a vegetable crop.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Aubergine')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Aubergine</h2>
+                                    <p class="text-white">Eggplant (US, Australia), aubergine (UK), or brinjal (South Asia and South Africa) is a plant species in the nightshade family Solanaceae. Solanum melongena is grown worldwide for its edible fruit.
+            
+            Most commonly purple, the spongy, absorbent fruit is used in various cuisines. Although often considered a vegetable, it is a berry by botanical definition. As a member of the genus Solanum, it is related to tomato and potato. Like the tomato, its skin and seeds can be eaten, but, like the potato, it is usually eaten cooked. Eggplant is nutritionally low in macronutrient and micronutrient content, but the capability of the fruit to absorb oils and flavors into its flesh through cooking expands its use in the culinary arts.
+            
+            It was originally domesticated from the wild nightshade species thorn or bitter apple, S. incanum, probably with two independent domestications: one in South Asia, and one in East Asia.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Baby Plum Tomatoes')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Baby Plum Tomatoes</h2>
+                                    <p class="text-white">The tomato is the edible, often red, berry of the plant Solanum lycopersicum, commonly known as a tomato plant. The species originated in western South America and Central America. The Nahuatl (Aztec language) word tomatl gave rise to the Spanish word tomate, from which the English word tomato derived.[3][4] Its domestication and use as a cultivated food may have originated with the indigenous peoples of Mexico. The Aztecs used tomatoes in their cooking at the time of the Spanish conquest of the Aztec Empire, and after the Spanish encountered the tomato for the first time after their contact with the Aztecs, they brought the plant to Europe. From there, the tomato was introduced to other parts of the European-colonized world during the 16th century.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Bacon')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Bacon</h2>
+                                    <p class="text-white">Bacon is a type of salt-cured pork. Bacon is prepared from several different cuts of meat, typically from the pork belly or from back cuts, which have less fat than the belly. It is eaten on its own, as a side dish (particularly in breakfasts), or used as a minor ingredient to flavour dishes (e.g., the club sandwich). Bacon is also used for barding and larding roasts, especially game, including venison and pheasant. The word is derived from the Old High German bacho, meaning "buttock", "ham" or "side of bacon", and is cognate with the Old French bacon.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Baking Powder')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Baking Powder</h2>
+                                    <p class="text-white">Baking powder is a dry chemical leavening agent, a mixture of a carbonate or bicarbonate and a weak acid. The base and acid are prevented from reacting prematurely by the inclusion of a buffer such as cornstarch. Baking powder is used to increase the volume and lighten the texture of baked goods. It works by releasing carbon dioxide gas into a batter or dough through an acid-base reaction, causing bubbles in the wet mixture to expand and thus leavening the mixture. The first single-acting baking powder was developed by Birmingham based food manufacturer Alfred Bird in England in 1843. The first double-acting baking powder was developed by Eben Norton Horsford in America in the 1860s.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Balsamic Vinegar')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Balsamic Vinegar</h2>
+                                    <p class="text-white">Balsamic vinegar (Italian: aceto balsamico), occasionally shortened to balsamic, is a very dark, concentrated, and intensely flavoured vinegar originating in Italy, made wholly or partially from grape must. Grape must is freshly crushed grape juice with all the skins, seeds and stems.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Basil')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Basil</h2>
+                                    <p class="text-white">Basil, also called great basil, is a culinary herb of the family Lamiaceae (mints).
+            
+            Basil is native to tropical regions from central Africa to Southeast Asia. It is a tender plant, and is used in cuisines worldwide. Depending on the species and cultivar, the leaves may taste somewhat like anise, with a strong, pungent, often sweet smell.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Basil Leaves')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Basil Leaves</h2>
+                                    <p class="text-white">Basil, also called great basil, is a culinary herb of the family Lamiaceae (mints).
+            </p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Basmati Rice')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Basmati Rice</h2>
+                                    <p class="text-white">Basmati is a variety of long, slender-grained aromatic rice which is traditionally from the Indian subcontinent. As of 2018-19, India exported to over 90% of the overseas basmati rice market, while Pakistan accounted for the remainder, according to the Indian state-run Agricultural and Processed Food Products Export Development Authority  and the Pakistan government-run Economic Survey of Pakistan. Many countries use domestically grown basmati rice crops; however, basmati is geographically exclusive to select districts of India, Pakistan, Nepal and Bangladesh.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Bay Leaf')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Bay Leaf</h2>
+                                    <p class="text-white">The bay leaf is an aromatic leaf commonly used in cooking. It can be used whole, or as dried and ground.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Bay Leaves')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Bay Leaves</h2>
+                                    <p class="text-white">The bay leaf is an aromatic leaf commonly used in cooking. It can be used whole, or as dried and ground.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Beef Brisket')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Beef Brisket</h2>
+                                    <p class="text-white">Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of high-quality protein and nutrients.
+            
+            Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed (corned beef or beef jerky). Trimmings, on the other hand, are usually mixed with meat from older, leaner (therefore tougher) cattle, are ground, minced or used in sausages. The blood is used in some varieties called blood sausage. Other parts that are eaten include other muscles and offal, such as the oxtail, liver, tongue, tripe from the reticulum or rumen, glands (particularly the pancreas and thymus, referred to as sweetbread), the heart, the brain (although forbidden where there is a danger of bovine spongiform encephalopathy, BSE, commonly referred to as mad cow disease), the kidneys, and the tender testicles of the bull (known in the United States as calf fries, prairie oysters, or Rocky Mountain oysters). Some intestines are cooked and eaten as is, but are more often cleaned and used as natural sausage casings. The bones are used for making beef stock.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Beef Fillet')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Beef Fillet</h2>
+                                    <p class="text-white">Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of high-quality protein and nutrients.
+            
+            Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed (corned beef or beef jerky). Trimmings, on the other hand, are usually mixed with meat from older, leaner (therefore tougher) cattle, are ground, minced or used in sausages. The blood is used in some varieties called blood sausage. Other parts that are eaten include other muscles and offal, such as the oxtail, liver, tongue, tripe from the reticulum or rumen, glands (particularly the pancreas and thymus, referred to as sweetbread), the heart, the brain (although forbidden where there is a danger of bovine spongiform encephalopathy, BSE, commonly referred to as mad cow disease), the kidneys, and the tender testicles of the bull (known in the United States as calf fries, prairie oysters, or Rocky Mountain oysters). Some intestines are cooked and eaten as is, but are more often cleaned and used as natural sausage casings. The bones are used for making beef stock.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Beef Gravy')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Beef Gravy</h2>
+                                    <p class="text-white">Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of high-quality protein and nutrients.
+            
+            Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed (corned beef or beef jerky). Trimmings, on the other hand, are usually mixed with meat from older, leaner (therefore tougher) cattle, are ground, minced or used in sausages. The blood is used in some varieties called blood sausage. Other parts that are eaten include other muscles and offal, such as the oxtail, liver, tongue, tripe from the reticulum or rumen, glands (particularly the pancreas and thymus, referred to as sweetbread), the heart, the brain (although forbidden where there is a danger of bovine spongiform encephalopathy, BSE, commonly referred to as mad cow disease), the kidneys, and the tender testicles of the bull (known in the United States as calf fries, prairie oysters, or Rocky Mountain oysters). Some intestines are cooked and eaten as is, but are more often cleaned and used as natural sausage casings. The bones are used for making beef stock.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Beef Stock')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Beef Stock</h2>
+                                    <p class="text-white">Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times. Beef is a source of high-quality protein and nutrients.
+            
+            Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak (filet mignon, sirloin steak, rump steak, rib steak, rib eye steak, hanger steak, etc.), while other cuts are processed (corned beef or beef jerky). Trimmings, on the other hand, are usually mixed with meat from older, leaner (therefore tougher) cattle, are ground, minced or used in sausages. The blood is used in some varieties called blood sausage. Other parts that are eaten include other muscles and offal, such as the oxtail, liver, tongue, tripe from the reticulum or rumen, glands (particularly the pancreas and thymus, referred to as sweetbread), the heart, the brain (although forbidden where there is a danger of bovine spongiform encephalopathy, BSE, commonly referred to as mad cow disease), the kidneys, and the tender testicles of the bull (known in the United States as calf fries, prairie oysters, or Rocky Mountain oysters). Some intestines are cooked and eaten as is, but are more often cleaned and used as natural sausage casings. The bones are used for making beef stock.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Bicarbonate Of Soda')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Bicarbonate Of Soda</h2>
+                                    <p class="text-white">Sodium bicarbonate, commonly known as baking soda, is a chemical compound with the formula NaHCO3. It is a salt composed of a sodium cation (Na+) and a bicarbonate anion (HCO3−). Sodium bicarbonate is a white solid that is crystalline, but often appears as a fine powder. It has a slightly salty, alkaline taste resembling that of washing soda (sodium carbonate). The natural mineral form is nahcolite. It is a component of the mineral natron and is found dissolved in many mineral springs.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Biryani Masala')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Biryani Masala</h2>
+                                    <p class="text-white">Biryani, also known as biriyani, biriani, birani or briyani, is a mixed rice dish with its origins among the Muslims of the Indian subcontinent. It can be compared to mixing a curry, later combining it with semi-cooked rice separately. This dish is especially popular throughout the Indian subcontinent, as well as among the diaspora from the region. It is also prepared in other regions such as Iraqi Kurdistan. It is made with Indian spices, rice, meat (chicken, goat, beef, lamb, prawn, or fish), vegetables or eggs.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Black Pepper')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Black Pepper</h2>
+                                    <p class="text-white">Black pepper (Piper nigrum) is a flowering vine in the family Piperaceae, cultivated for its fruit, known as a peppercorn, which is usually dried and used as a spice and seasoning. When fresh and fully mature, it is about 5 mm (0.20 in) in diameter and dark red, and contains a single seed, like all drupes. Peppercorns and the ground pepper derived from them may be described simply as pepper, or more precisely as black pepper (cooked and dried unripe fruit), green pepper (dried unripe fruit), or white pepper (ripe fruit seeds).
+            
+            Black pepper is native to present-day Kerala in Southwestern India, and is extensively cultivated there and elsewhere in tropical regions. Vietnam is the world's largest producer and exporter of pepper, producing 34% of the world's crop, as of 2013.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Black Treacle')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Black Treacle</h2>
+                                    <p class="text-white">Molasses (American English) or black treacle (British English) is a viscous product resulting from refining sugarcane or sugar beets into sugar. Molasses varies by amount of sugar, method of extraction, and age of plant. Sugarcane molasses is primarily used for sweetening and flavoring foods in the United States, Canada, and elsewhere. Molasses is a defining component of fine commercial brown sugar.
+            
+            Sweet sorghum syrup may be colloquially called "sorghum molasses" in the southern United States.[2][3] Similar products include honey, maple syrup, corn syrup, and invert syrup. Most of these alternative syrups have milder flavors.</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Borlotti Beans')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Borlotti Beans</h2>
+                                    <p class="text-white">null</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Bowtie Pasta')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Bowtie Pasta</h2>
+                                    <p class="text-white">null</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Bramley Apples')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Bramley Apples</h2>
+                                    <p class="text-white">null</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Brandy')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Brandy</h2>
+                                    <p class="text-white">null</p>
+                                </div><div class="col-md-3" onclick="getMealIngr('Bread')">
+                                    <i class="fa-solid fa-drumstick-bite fa-3x text-center text-white ms-3"></i>
+                                    <h2 class="text-white">Bread</h2>
+                                    <p class="text-white">null</p>
+                                </div></div>
+              </div>
+            </section>
+            <!-- end -->
+            <!-- contact us -->
+            <div class="container py-5 d-none" id="contact">
+              <div class="position d-flex ">
+                <label for="productName" class="mb-3"></label>
+                <input oninput="validateProductName()" type="text" class="form-control m-4" id="productName" placeholder="Enter Your Name">
+                <br>
+            <p class="text-danger d-none " id="wrongName"></p>
+            <label for="email" class="mb-3"></label>
+            <input oninput="validateEmail()" type="text" class="form-control m-4" id="email" placeholder="Enter Your email">
+            <br>
+            <p class="text-danger d-none" id="wrongemail"></p>
+              </div>
+            
+              <div class="position d-flex ">
+                <label for="phone" class="mb-3"></label>
+                <input oninput="validatePhone()" type="text" class="form-control m-4" id="phone" placeholder="Enter Your Phone">
+                <br>
+                <p class="text-danger d-none" id="wrongNumber"></p>
+                <label for="age" class="mb-3"></label>
+                <input oninput="validateAge()" type="text" class="form-control m-4" id="age" placeholder="Enter Your Age">
+                <br>
+                <p class="text-danger d-none" id="wrongAge"></p>
+              </div>
+              <div class="position d-flex ">
+                <label for="password" class="mb-3"></label>
+                <input oninput="validatePassword()" type="password" class="form-control m-4" id="password" placeholder="Enter Your Password">
+                <br>
+                <p class="text-danger d-none" id="wrongPassword"></p>
+                <label for="password" class="mb-3"></label>
+                <input oninput="validatePassword()" type="password" class="form-control m-4" id="confirmPassword" placeholder="RePassword">
+                <br>
+                <p class="text-danger d-none" id="wrongConfirmPassword"></p>
+              </div>
+            <div class="zorar d-flex justify-content-center align-content-center">
+              <button type="button" class="btn btn-outline-danger" id="submitButton" disabled="" onclick="submitForm()">Submit</button>
+            </div>
+            </div>
+    
+            
+            
+
+
+
+
+
+
+
+    
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
